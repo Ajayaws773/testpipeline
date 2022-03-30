@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('prep') {
+            steps {
+                echo 'Hello World'
+                sh "rm -rf eb-tomcat-snakes"
+                sh "git clone https://github.com/aws-samples/eb-tomcat-snakes.git"
+                sh "sleep 30"
+                sh "cd eb-tomcat-snakes"
+                
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'Hello World2'
+
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'Hello World3'
+
+            }
+        }
+    }
+}
