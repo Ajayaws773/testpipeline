@@ -5,3 +5,5 @@ test
 dg
 ghk
 test
+
+http://13.126.32.218:8080/multibranch-webhook-trigger/invoke?token=test
