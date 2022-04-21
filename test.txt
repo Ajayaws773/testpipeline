@@ -1,7 +1,4 @@
-12
-sdd
-test
-test
+
 dg
 ghk
 test
